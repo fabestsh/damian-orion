@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "DancingScript";
-  src: url("assets/fonts/DancingScript.ttf");
+  src: url(../assets/fonts/DancingScript.ttf);
 }
 
 /* Global Styling */
@@ -59,7 +59,7 @@ img {
 /* Hero Section Styling */
 .hero {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), #464646),
-    url(assets/images/background1.jpg);
+    url(../assets/images/background1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -238,7 +238,16 @@ img {
 #products h2 {
   font-size: 3rem;
 }
-
+.products-grid {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+  width: 100%;
+  justify-items: center; /* Horizontally center items in the grid */
+  align-items: center;
+}
 .products-grid img {
   height: 200px;
   width: 200px;
